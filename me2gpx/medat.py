@@ -40,6 +40,3 @@ def load_from_dat_file(filehandle):
 	end = HEADER_SIZE + (POINT_PACK_SIZE *data_len) // POINT_PACK_SIZE
 	raw_points = data_input[start:end]
 	return map(make_point, struct.iter_unpack(POINT_PATTERN, raw_points))
-		
-
-
