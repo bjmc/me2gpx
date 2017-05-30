@@ -26,7 +26,7 @@ Point = namedtuple("Point", ('timestamp',
                              'horizontalAccuracy',
                              'verticalAccuracy',
                              'source')
-		)
+        )
 
 def make_point(raw_point):
     return Point(*raw_point[:-1], source=PointSource(raw_point[-1]))

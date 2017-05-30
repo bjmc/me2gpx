@@ -1,7 +1,7 @@
 import argparse
 
-from medat import load_from_dat_file
-from gpx import GPXTrack
+from .medat import load_from_dat_file
+from .gpx import GPXTrack
 
 def main():
     desc = 'Convert Maps.me gps_track.dat files to GPX format.'
