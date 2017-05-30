@@ -2,6 +2,9 @@
 
 from setuptools import setup
 
+with open('test_requirements.txt') as f:
+    test_requirements = f.readlines()
+
 setup(name='me2gpx',
       version='0.1',
       description='Python Distribution Utilities',
@@ -9,5 +12,6 @@ setup(name='me2gpx',
       author_email='brendan@mccoll.am',
       url='https://github.com/bjmc/me2gpx',
       packages=['me2gpx'],
-      test_suite='test.test_suite'
+      test_suite='test.test_suite',
+      tests_require=test_requirements,
      )
